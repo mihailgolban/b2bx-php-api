@@ -1,0 +1,34 @@
+{
+    "name": "felex/b2bx-api",
+    "description": "PHP library for the B2BX API",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihail Golban",
+            "email": "mihailgolban91@gmail.com"
+        }
+    ],
+    "scripts": {
+        "release": "conventional-changelog --commit",
+        "cs-fix": "php-cs-fixer fix"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "B2BX\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require-dev": {
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "marcocesarato/php-conventional-changelog": "^1.10"
+    }
+}
